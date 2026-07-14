@@ -1,5 +1,12 @@
 .git
+.gitignore
 *.zip
+Dockerfile
+.dockerignore
+setup.sh
+README.md
+report-template.md
+worksheets/
 .webserver.pid
 logs/live-access.log
 ANSWER_KEY_HOST.md
