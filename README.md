@@ -25,10 +25,11 @@ decoding. The evidence tree ships inside a Docker container.
 
 | Folder | Day | What's inside |
 |--------|-----|----------------|
-| `webroot/`   | 2 | served site: index, robots.txt, notes, config, admin-notes |
+| `webroot/`   | 2 | the site served to the browser (start at `robots.txt`) |
 | `logs/`      | 3 | access.log, auth.log, system.log |
 | `encoded/`   | 3 | Base64 + ASCII puzzles |
-| `worksheets/`| 2–3 | student worksheets |
+| `worksheets/`| 2–3 | student worksheets (repo only — not inside the container) |
 
-There are **4 flags** in this repo (2 plaintext, 2 encoded). The paired
-NETWORK_ANALYST repo holds the 5th.
+Inside the container, `/lab` holds **only the evidence** (`webroot/`,
+`logs/`, `encoded/`) — the Dockerfile, worksheets and docs stay out of the
+image.

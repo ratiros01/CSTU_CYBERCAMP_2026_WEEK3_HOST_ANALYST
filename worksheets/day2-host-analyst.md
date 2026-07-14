@@ -23,22 +23,29 @@ first inside the container, then in the web root.
     ls -la
     find . -type f
     grep -R -i "password" .
-    grep -R "CSTU" .
+    grep -R -i "todo" .
+    grep -R -i "secret" .
 
 - Q1. Which files look interesting, and why?
-- Q2. Did a grep reveal a flag? (Flag 1)
+- Q2. One file is an internal note that was never meant to ship.
+      Read it carefully, line by line. Anything in there that
+      doesn't belong in a note? (Flag 1)
 
 ## AFTERNOON — web root / exposed files
 
 Back on the host (type `exit` first):
 
+    curl localhost:8000/
     curl localhost:8000/robots.txt
-    curl localhost:8000/admin-notes.txt
-    curl localhost:8000/config-sample.txt
 
-- Q3. Which paths does robots.txt try to hide?
-- Q4. Open a hidden path — did you find a flag? (Flag 2)
-- Q5. Which files should NOT be in a web root?
+- Q3. robots.txt lists paths it does not want indexed.
+      Write them down.
+- Q4. Now request each of those paths yourself:
+
+    curl localhost:8000/<path-from-robots>
+
+      What did the site try to hide? (Flag 2)
+- Q5. Which files should NOT be in a web root, and why?
 
 ## Stop the lab
 
