@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /backup/
+Disallow: /admin-notes.txt
+Disallow: /config-sample.txt

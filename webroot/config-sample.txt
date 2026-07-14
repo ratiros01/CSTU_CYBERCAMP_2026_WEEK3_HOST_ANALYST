@@ -1,0 +1,6 @@
+# sample config — DUMMY VALUES, training only
+db_host=10.0.0.20
+db_user=app_ro
+db_pass=changeme_demo_only
+api_token=DEMO-0000-1111-2222     # fake token
+debug=true                        # <- should be false in production

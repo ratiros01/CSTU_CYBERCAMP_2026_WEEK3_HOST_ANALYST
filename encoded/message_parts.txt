@@ -1,0 +1,7 @@
+# Some text was split into pieces and Base64-encoded.
+# The pieces are OUT OF ORDER. Decode each, then find the
+# correct order so the sentence makes sense.
+
+piece_X: bGVha2VkIGEgZGVtbyBkYXRhYmFzZSBjcmVkZW50aWFsLiA=
+piece_Y: RmxhZzogQ1NUVXtldjFkM25jZV8xbl9wbDQxbl9zMWdodH0=
+piece_Z: VGhlIGV4cG9zZWQgY29uZmlnIGZpbGUg

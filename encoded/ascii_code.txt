@@ -1,0 +1,4 @@
+# These are ASCII decimal codes. Convert each number to its
+# character to reveal a short instruction.
+
+67 72 69 67 75 45 65 85 84 72 45 76 79 71

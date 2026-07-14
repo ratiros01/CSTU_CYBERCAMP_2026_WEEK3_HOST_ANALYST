@@ -1,0 +1,6 @@
+.git
+*.zip
+.webserver.pid
+logs/live-access.log
+ANSWER_KEY_HOST.md
+SHARED_VALUES.md

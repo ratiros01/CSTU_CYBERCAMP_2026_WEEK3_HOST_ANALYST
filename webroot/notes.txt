@@ -1,0 +1,11 @@
+INTERNAL NOTE — do not deploy to production
+(TRAINING DATA — everything below is fake)
+
+TODO: rotate the demo service account before go-live
+demo service account:
+  user: svc-demo
+  pass: Spr1ng2024!demo      <-- placeholder, NOT a real secret
+
+# audit-ref: CSTU{gr3p_f0und_m3}
+
+Reminder: remove this file from the web root!
